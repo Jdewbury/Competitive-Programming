@@ -1,8 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        pairs = dict(("()", "{}", "[]"))
-
+        pairs = {'(':')', '{':'}', '[':']'}
         for i in s:
             if i in pairs:
                 stack.append(i)

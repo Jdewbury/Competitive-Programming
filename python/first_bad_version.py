@@ -5,6 +5,7 @@ class Solution:
     def firstBadVersion(self, n: int) -> int:
         i = 0
         j = n - 1
+        
         while (i < j):
             mid = (i+j) // 2
             if isBadVersion(mid):
